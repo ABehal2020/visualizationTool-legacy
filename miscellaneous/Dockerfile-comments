@@ -1,0 +1,20 @@
+# docker running off new environment (UNIX/MAC/WINDOWS) - let's assume UNIX for now
+# from pulls a docker image (in this case python:3) - this image is responsible for downloading python onto the container
+FROM python:3
+# python output redirected to terminal rather than buffer (temporary holding place)
+ENV PYTHONUNBUFFERED 1
+# creates the directory code under the root folder (/)
+RUN mkdir /code
+# running all commands from code directory (that is the working directory now) - this is like saying cd /code (all commands run from here)
+WORKDIR /code
+# copying requirements.txt (in this case from pyconnectDocker directory) on Mac to UNIX environment in docker
+COPY requirements.txt /code/
+# installing all dependencies specified in requirements.txt in the UNIX environment in docker
+RUN pip install -r requirements.txt
+# copying all files (in this case from pyconnectDocker directory) to under the code directory (/code/) in docker
+COPY . /code/
+# running python file svcon.py in the docker
+RUN python svcon.py
+
+# when you build a docker, it is a docker image
+# when you run a docker, it becomes a container (instance of the docker image)
