@@ -19,7 +19,7 @@ docutils==0.14
 idna==2.7
 imagesize==1.1.0
 ipython-genutils==0.2.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 jsonschema==3.0.1
 jupyter-core==4.5.0
 kiwisolver==1.1.0
