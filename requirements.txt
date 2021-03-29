@@ -36,7 +36,7 @@ protobuf==3.8.0
 py2bit==0.3.0
 pyBigWig==0.3.16
 pycparser==2.19
-Pygments==2.4.2
+Pygments==2.7.4
 PyMySQL==0.9.3
 pyparsing==2.4.0
 pyrsistent==0.15.2
