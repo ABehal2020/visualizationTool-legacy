@@ -11,7 +11,7 @@ cycler==0.10.0
 decorator==4.4.0
 deepTools==3.0.0
 deeptoolsintervals==0.1.8
-Django==2.2.1
+Django==2.2.22
 django-cors-headers==3.0.1
 django-filter==2.1.0
 djangorestframework==3.9.4
